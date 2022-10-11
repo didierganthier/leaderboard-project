@@ -25,10 +25,15 @@ To get a local copy up and running follow these simple example steps. (NPM)
 5. Run `npm install` to get the dependencies
 
    not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
-6. Run the webpack server using this command:
+6. Run webpack:
+- Production:
 ``` 
-   npm test
+   npm run build
 ```  
+- Development:
+  ```
+   npm run start
+  ```
   not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
 ### Prerequisites

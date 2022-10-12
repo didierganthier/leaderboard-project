@@ -4,6 +4,7 @@ li {
 }
 
 h1,
+.error,
 .scores-header,
 .scores-list li {
   padding-left: 30px;
@@ -96,4 +97,28 @@ li:nth-child(even) {
 .refresh,
 .add-score-form button {
   width: 100px;
+}
+
+.error {
+  margin-top: 20px;
+  background-color: red;
+  width: 35%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.success {
+  margin-top: 20px;
+  background-color: green;
+  width: 35%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px black;
 }

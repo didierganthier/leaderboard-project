@@ -111,9 +111,9 @@ li:nth-child(even) {
   width: 100px;
 }
 
-.error {
+.error,
+.success {
   margin-top: 20px;
-  background-color: red;
   width: 35%;
   color: white;
   display: flex;
@@ -123,14 +123,10 @@ li:nth-child(even) {
   box-shadow: 1px 1px 1px 1px black;
 }
 
+.error {
+  background-color: red;
+}
+
 .success {
-  margin-top: 20px;
   background-color: green;
-  width: 35%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 1px 1px 1px 1px black;
 }

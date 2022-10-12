@@ -8,7 +8,7 @@ const submitButton = document.querySelector('.submit-button');
 const refreshButton = document.querySelector('.refresh');
 const message = document.querySelector('.message');
 
-// createGame('Cool Game');
+// createGame('Cool Game', message);
 
 refreshButton.addEventListener('click', (e) => {
   e.preventDefault();

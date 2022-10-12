@@ -27,9 +27,9 @@ To get a local copy up and running follow these simple example steps. (NPM)
    not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 6. Run webpack:
 - Production:
-``` 
-   npm run build
-```  
+   ``` 
+      npm run build
+   ```  
 - Development:
   ```
    npm run start

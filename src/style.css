@@ -4,6 +4,7 @@ li {
 }
 
 h1,
+.error,
 .scores-header,
 .scores-list li {
   padding-left: 30px;
@@ -34,6 +35,7 @@ h1,
 .refresh,
 .scores-list {
   border: 2px solid black;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .scores-header {
@@ -63,12 +65,14 @@ h1,
   margin-top: 10px;
   height: 30px;
   width: 200px;
+  outline-color: black;
 }
 
 .add-score-form button {
   margin-top: 10px;
   height: 30px;
   margin-left: auto;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 li:nth-child(odd) {
@@ -84,6 +88,7 @@ li:nth-child(even) {
   padding-left: 0;
   width: 100%;
   margin-left: 30px;
+  border-radius: 15px;
 }
 
 .scores-list li {
@@ -93,7 +98,35 @@ li:nth-child(even) {
   height: 30px;
 }
 
+.scores-list li:first-child {
+  border-radius: 15px 15px 0 0;
+}
+
+.scores-list li:last-child {
+  border-radius: 0 0 15px 15px;
+}
+
 .refresh,
 .add-score-form button {
   width: 100px;
+}
+
+.error,
+.success {
+  margin-top: 20px;
+  width: 35%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.error {
+  background-color: red;
+}
+
+.success {
+  background-color: green;
 }

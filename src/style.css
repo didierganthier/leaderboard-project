@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+@keyframes color {
+  0% { background: #3cc; }
+  20% { background: #33cc36; }
+  40% { background: #b8cc33; }
+  60% { background: #fcca00; }
+  80% { background: #33cc36; }
+  100% { background: #3cc; }
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(90deg, #2a73c6 0%, #212ebc 100%);
+  animation: color 9s infinite linear;
+  font-family: 'Exo', sans-serif;
+}
+
 li {
   list-style: none;
   font-weight: bold;
@@ -10,9 +35,15 @@ h1,
   padding-left: 30px;
 }
 
+.leaderboard-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .refresh {
-  background-color: lightgray;
-  color: black;
+  background-color: rgb(11, 181, 77);
+  color: white;
   text-align: center;
   text-decoration: none;
   font-size: 13px;
@@ -20,6 +51,7 @@ h1,
   height: 30px;
   margin-top: 20px;
   margin-left: 30px;
+  border-radius: 5px;
 }
 
 .scores-header,
@@ -44,7 +76,9 @@ h1,
 
 .main-content {
   flex-direction: row;
-  width: 40%;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
 }
 
 .recent-scores {
@@ -69,6 +103,7 @@ h1,
 }
 
 .add-score-form button {
+  background-color: #33cc36;
   margin-top: 10px;
   height: 30px;
   margin-left: auto;
@@ -76,7 +111,7 @@ h1,
 }
 
 li:nth-child(odd) {
-  background-color: lightgray;
+  background-color: #b9c4ef;
 }
 
 li:nth-child(even) {
@@ -89,13 +124,15 @@ li:nth-child(even) {
   width: 100%;
   margin-left: 30px;
   border-radius: 15px;
+  box-shadow: 5px 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .scores-list li {
   flex-direction: row;
-  padding-right: 30px;
+  padding-right: 40px;
   padding-top: 10px;
   height: 30px;
+  font-size: large;
 }
 
 .scores-list li:first-child {
@@ -114,13 +151,20 @@ li:nth-child(even) {
 .error,
 .success {
   margin-top: 20px;
-  width: 35%;
   color: white;
   display: flex;
   justify-content: center;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 1px 1px 1px 1px black;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.refresh:hover,
+.add-score-form button:hover {
+  background-color: #b9c4ef;
 }
 
 .error {

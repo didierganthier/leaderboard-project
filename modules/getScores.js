@@ -5,7 +5,8 @@ const getScores = async (scores) => {
   const stortedScores = json.result.sort((a, b) => b.score - a.score);
   stortedScores.forEach((element) => {
     if (json.result.length > 0) {
-      scores.innerHTML += `<li>${element.user}: ${element.score}</li>`;
+      const emoji = element.score > 50 ? "😁" : "😢";
+      scores.innerHTML += `<li>${emoji} ${element.user}: ${element.score}</li>`;
     } else {
       scores.innerHTML = 'No scores yet';
     }

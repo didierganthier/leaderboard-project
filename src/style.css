@@ -21,6 +21,7 @@ body {
   background: linear-gradient(90deg, #2a73c6 0%, #212ebc 100%);
   animation: color 9s infinite linear;
   font-family: 'Exo', sans-serif;
+  overflow-y: scroll;
 }
 
 li {
@@ -76,9 +77,15 @@ h1,
 
 .main-content {
   flex-direction: row;
-  width: 100%;
-  justify-content: center;
+  width: 40%;
+  justify-content: space-between;
   gap: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .recent-scores {
@@ -87,7 +94,7 @@ h1,
 }
 
 .add-score {
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .add-score-form {
@@ -100,6 +107,7 @@ h1,
   height: 30px;
   width: 200px;
   outline-color: black;
+  border-radius: 9px;
 }
 
 .add-score-form button {
@@ -107,6 +115,8 @@ h1,
   margin-top: 10px;
   height: 30px;
   margin-left: auto;
+  border-radius: 9px;
+  color: white;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -124,23 +134,28 @@ li:nth-child(even) {
   width: 100%;
   margin-left: 30px;
   border-radius: 15px;
-  box-shadow: 5px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  overflow-y: scroll;
+  background: rgba(29, 207, 183, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.scores-list::-webkit-scrollbar {
+  display: none;
 }
 
 .scores-list li {
   flex-direction: row;
   padding-right: 40px;
   padding-top: 10px;
+  margin: 10px;
   height: 30px;
   font-size: large;
-}
-
-.scores-list li:first-child {
-  border-radius: 15px 15px 0 0;
-}
-
-.scores-list li:last-child {
-  border-radius: 0 0 15px 15px;
+  border-radius: 9px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .refresh,

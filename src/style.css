@@ -94,6 +94,7 @@ h1,
 }
 
 .add-score {
+  margin-left: 30px;
   margin-right: 30px;
 }
 
@@ -108,6 +109,7 @@ h1,
   width: 200px;
   outline-color: black;
   border-radius: 9px;
+  border: 1px solid black;
 }
 
 .add-score-form button {
@@ -188,4 +190,40 @@ li:nth-child(even) {
 
 .success {
   background-color: green;
+}
+
+@media screen and (max-width: 1030px) {
+  .main-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .scores-list {
+    width: 90%;
+  }
+
+  .add-score-form {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .add-score-form input {
+    width: 100%;
+  }
+
+  .scores-header {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .refresh {
+    margin-left: 0;
+  }
 }
